@@ -1,7 +1,5 @@
 defmodule Schoolbus do
-  @moduledoc """
-  Manage multiple PubSub instances
-  """
+  @moduledoc File.read!("README.md")
 
   @type bus_id :: atom
   @type topic :: atom | {atom, atom}

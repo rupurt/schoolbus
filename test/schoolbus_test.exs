@@ -1,6 +1,5 @@
 defmodule SchoolbusTest do
   use ExUnit.Case, async: false
-  doctest Schoolbus
 
   @other_bus :other
   @default_topics [:games, {:songs, :diplo}, {:songs, :prodigy}]

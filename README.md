@@ -90,9 +90,9 @@ iex(13)> flush
 Start two buses
 
 ```elixir
-iex(1)> {:ok, bus_a} = Schoolbus.start_link([id: :bus_a])
+iex(1)> {:ok, _bus_a} = Schoolbus.start_link([id: :bus_a])
 {:ok, #PID<0.210.0>}
-iex(2)> {:ok, bus_b} = Schoolbus.start_link([id: :bus_b])
+iex(2)> {:ok, _bus_b} = Schoolbus.start_link([id: :bus_b])
 {:ok, #PID<0.220.0>}
 ```
 
