@@ -53,20 +53,24 @@ iex(4)> Schoolbus.subscribe(:games)
 iex(5)> self()
 #PID<0.208.0>
 iex(6)> Schoolbus.subscribers()
-[topic_a: #PID<0.208.0>]
+[games: #PID<0.208.0>]
 ```
 
 Subscribe to all topics within a namespace
 
 ```elixir
 iex(7)> Schoolbus.subscribers()
-[topic_a: #PID<0.208.0>]
+[games: #PID<0.208.0>]
 iex(8)> Schoolbus.subscribe({:songs, "*"})
-{:ok, [:games, {:songs, :diplo}, {:songs, :tiesto}]}
+{:ok, [songs: :diplo, songs: :tiesto]}
 iex(9)> self()
 #PID<0.208.0>
 iex(10)> Schoolbus.subscribers()
-[topic_a: #PID<0.208.0>]
+[
+  {{:songs, :tiesto}, #PID<0.208.0>},
+  {{:songs, :diplo}, #PID<0.208.0>},
+  {:games, #PID<0.208.0>}
+]
 ```
 
 Broadcast a topic to all subscribers
