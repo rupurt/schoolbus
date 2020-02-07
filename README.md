@@ -12,7 +12,7 @@ Add the `schoolbus` package to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:schoolbus, "~> 0.0.1"}]
+  [{:schoolbus, "~> 0.0.2"}]
 end
 ```
 
