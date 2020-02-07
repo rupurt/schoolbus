@@ -29,14 +29,14 @@ defmodule Schoolbus.MixProject do
   end
 
   defp description do
-    "Deribit API Client for Elixir"
+    "Manage one or more PubSub instances using the Elixir registry"
   end
 
   defp package do
     %{
       licenses: ["MIT"],
       maintainers: ["Alex Kwiatkowski"],
-      links: %{"GitHub" => "https://github.com/fremantle-capital/ex_deribit"}
+      links: %{"GitHub" => "https://github.com/rupurt/schoolbus"}
     }
   end
 end
