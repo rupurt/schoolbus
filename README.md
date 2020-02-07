@@ -1,6 +1,6 @@
 # Schoolbus
 [![Build Status](https://github.com/rupurt/schoolbus/workflows/Test/badge.svg?branch=master)](https://github.com/rupurt/schoolbus/actions?query=workflow%3ATest)
-[![hex.pm version](https://img.shields.io/hexpm/v/schoolbus.svg?style=flat)](https://hex.pm/packages/ex_deribit)
+[![hex.pm version](https://img.shields.io/hexpm/v/schoolbus.svg?style=flat)](https://hex.pm/packages/schoolbus)
 
 Manage one or more PubSub instances using the Elixir registry
 
