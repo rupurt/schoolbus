@@ -15,13 +15,13 @@ jobs:
 
     strategy:
       matrix:
-        otp: [21.x, 22.x]
-        elixir: [1.9.x]
+        otp: [21.x, 22.x, 23.x]
+        elixir: [1.9.x, 1.10.x, 1.11.x]
 
     steps:
       - uses: actions/checkout@v1.0.0
 
-      - uses: actions/setup-elixir@v1.1.0
+      - uses: actions/setup-elixir@v1.5.0
         with:
           otp-version: ${{matrix.otp}}
           elixir-version: ${{matrix.elixir}}
@@ -45,4 +45,4 @@ jobs:
         run: mix test
 
       - name: Dialyzer
-        run: mix dialyzer --halt-exit-status
+        run: mix dialyzer
